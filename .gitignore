@@ -1,0 +1,27 @@
+# Build artifacts
+dist/
+build/
+backups/
+
+# Local experiments and scratch files
+experimental/
+out.json
+
+# Local user data
+ChronicaData/
+ChronicaDnDData/
+TitZeroData/
+MifariumData/
+
+# Visual Studio / IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+
+# OS / temporary files
+Thumbs.db
+Desktop.ini
+*.tmp
+*.log

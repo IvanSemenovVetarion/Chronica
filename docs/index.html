@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c10">
+  <title>Chronica — тихая мастерская для больших историй</title>
+  <meta name="description" content="Chronica — настольная мастерская для фэнтезийных миров, героев и летописей. Всё хранится локально на вашем компьютере.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chronica — тихая мастерская для больших историй">
+  <meta property="og:description" content="Миры, герои, древо рода, карта мира и летопись. Без подписки. Без облака. Только ваши истории.">
+  <meta property="og:image" content="https://ivansemenovvetarion.github.io/Chronica/assets/app-dashboard.jpg">
+  <meta property="og:url" content="https://ivansemenovvetarion.github.io/Chronica/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/sigil.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__stars"></div>
+    <div class="backdrop__glow backdrop__glow--one"></div>
+    <div class="backdrop__glow backdrop__glow--two"></div>
+    <img class="backdrop__contour" src="assets/contour.svg" alt="">
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Chronica — на главную">
+      <img class="brand__sigil" src="assets/sigil.svg" alt="" width="42" height="42">
+      <span class="brand__copy">
+        <strong>Chronica</strong>
+        <small>хранитель миров</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#features">Возможности</a>
+      <a href="#showcase">Как выглядит</a>
+      <a href="#download">Установка</a>
+      <a class="nav__github" href="https://github.com/IvanSemenovVetarion/Chronica" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.2.8-.5v-2c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.2.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.1 1.2a10.7 10.7 0 0 1 5.7 0c2.2-1.5 3.1-1.2 3.1-1.2.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.2 11.2 0 0 0 12 .8Z"/></svg>
+        GitHub
+      </a>
+      <a class="button button--small" href="#download">Скачать</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero__copy reveal">
+        <p class="kicker"><span></span> Chronica 2.0 · Windows</p>
+        <h1>Тихая мастерская для <em>больших историй</em>.</h1>
+        <p class="hero__lead">Миры, герои, древо рода, карта и летопись — в одном кабинете. Без подписки, без аккаунта и без облака. Всё остаётся на вашем компьютере.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/ChronicaSetup.exe">
+            <span class="button__icon">↓</span> Скачать установщик
+          </a>
+          <a class="button button--ghost" href="https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-portable.zip">
+            Портативная версия
+          </a>
+        </div>
+        <div class="hero__meta">
+          <span>Windows 10/11</span>
+          <span>Локальные данные</span>
+          <span>Русский и English</span>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal reveal--late">
+        <div class="window">
+          <div class="window__bar">
+            <span class="window__dots"><i></i><i></i><i></i></span>
+            <span class="window__title">Chronica — обзор мира</span>
+            <span class="window__mark">✦</span>
+          </div>
+          <div class="window__body">
+            <img src="assets/app-dashboard.jpg" alt="Chronica: обзор мира «Вереск и Пепел»" width="1440" height="900">
+          </div>
+        </div>
+        <span class="float-tag float-tag--one">Древо рода</span>
+        <span class="float-tag float-tag--two">Карта мира</span>
+        <span class="float-tag float-tag--three">Word · Excel · JSON</span>
+      </div>
+    </section>
+
+    <section class="stat-strip shell reveal" aria-label="Коротко о Chronica">
+      <div><strong>10</strong><span>жанров</span></div>
+      <div><strong>25</strong><span>палитр</span></div>
+      <div><strong>15</strong><span>узоров фона</span></div>
+      <div><strong>100%</strong><span>локально</span></div>
+    </section>
+
+    <section class="section shell" id="features">
+      <div class="section-head reveal">
+        <p class="section-no">01 / Зачем</p>
+        <div>
+          <h2>Всё для мира, который живёт<br>только у вас.</h2>
+          <p>Chronica не пытается быть облачным сервисом. Это спокойный инструмент для автора: открыть, записать, связать, сохранить.</p>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <span class="feature__icon">◈</span>
+          <h3>Миры и герои</h3>
+          <p>Персонажи с историей, внешностью, галереей, палитрой, голосом и музыкой.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature__icon">⌁</span>
+          <h3>Древо рода</h3>
+          <p>Ручное перетаскивание, читаемые связи и двусторонние отношения в карточках.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature__icon">◌</span>
+          <h3>Карта мира</h3>
+          <p>Метки, подписи, маршруты, реки и фоны. Или загрузите свою карту.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature__icon">✦</span>
+          <h3>Свой стиль</h3>
+          <p>Жанровые палитры, 15 узоров, свои шрифты, фон и иконки разделов.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature__icon">⟐</span>
+          <h3>Меню под жанр</h3>
+          <p>Артефакты, бестиарий, оружие или транспорт — подключаются под ваш мир.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="feature__icon">▤</span>
+          <h3>Экспорт и копии</h3>
+          <p>Word, Excel, JSON и ZIP-архивы со всеми изображениями, аудио и шрифтами.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section showcase shell" id="showcase">
+      <div class="section-head reveal">
+        <p class="section-no">02 / Как выглядит</p>
+        <div>
+          <h2>Спокойный интерфейс.<br>Богатая фактура.</h2>
+          <p>Тёмные кабинеты, тёплая латунь и книжная типографика. Chronica не мешает тексту — она его обрамляет.</p>
+        </div>
+      </div>
+
+      <figure class="showcase__hero reveal">
+        <img src="assets/app-tree.jpg" alt="Древо рода в Chronica" width="1440" height="900" loading="lazy">
+        <figcaption><span>Древо рода</span> Связи, поколения и ручная раскладка</figcaption>
+      </figure>
+
+      <div class="showcase__pair">
+        <figure class="reveal">
+          <img src="assets/app-characters.jpg" alt="Галерея героев в Chronica" width="1440" height="900" loading="lazy">
+          <figcaption><span>Галерея героев</span> Портреты, статусы и роли</figcaption>
+        </figure>
+        <figure class="reveal reveal--late">
+          <img src="assets/app-map.jpg" alt="Карта мира в Chronica" width="1440" height="900" loading="lazy">
+          <figcaption><span>Карта мира</span> Метки, маршруты и подписи</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section customize shell">
+      <div class="customize__copy reveal">
+        <p class="section-no">03 / Настройка</p>
+        <h2>У каждой истории<br>свой голос.</h2>
+        <p>Выберите жанр — и Chronica подстроит палитру, шрифт и узор фона. Потом всё можно менять по отдельности: от масштаба интерфейса до собственных иконок разделов.</p>
+        <ul class="check-list">
+          <li>70–160% масштаба для любого монитора</li>
+          <li>Свои шрифты, фон и иконки</li>
+          <li>Меню, которое можно собрать под себя</li>
+        </ul>
+      </div>
+      <div class="customize__visual reveal reveal--late" aria-label="Примеры палитр и узоров Chronica">
+        <div class="palette-row">
+          <span style="--swatch:#0b1117;--swatch2:#d4ae68"></span>
+          <span style="--swatch:#15101b;--swatch2:#c28e9c"></span>
+          <span style="--swatch:#19110c;--swatch2:#d39b62"></span>
+          <span style="--swatch:#0a1414;--swatch2:#8fb7a3"></span>
+          <span style="--swatch:#11151f;--swatch2:#9aa9d9"></span>
+        </div>
+        <div class="pattern-row">
+          <i class="pattern pattern--runes"></i>
+          <i class="pattern pattern--grid"></i>
+          <i class="pattern pattern--waves"></i>
+          <i class="pattern pattern--gears"></i>
+          <i class="pattern pattern--snow"></i>
+        </div>
+        <div class="sample-card">
+          <span class="sample-card__kicker">Летопись мира</span>
+          <strong>Вереск и Пепел</strong>
+          <p>«Земли, где древние договоры помнят камни, а пепел хранит имена павших».</p>
+          <span class="sample-card__line"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy shell">
+      <div class="privacy__panel reveal">
+        <p class="section-no">04 / Приватность</p>
+        <h2>Ваши миры<br>не уходят в облако.</h2>
+        <p>Chronica хранит данные в обычной папке <code>ChronicaData</code> рядом с программой. Хотите — делайте ZIP-копии. Хотите — переносите на другой компьютер. Хотите — подключайте общую папку Яндекс Диска, Google Drive или OneDrive для совместной работы.</p>
+        <div class="privacy__facts">
+          <span>Без регистрации</span>
+          <span>Без телеметрии</span>
+          <span>Без подписки</span>
+        </div>
+      </div>
+      <div class="quote-card reveal reveal--late">
+        <span class="quote-card__mark">“</span>
+        <p>Иногда для мира нужно не больше места, а больше тишины.</p>
+        <span class="quote-card__author">Chronica · манифест</span>
+      </div>
+    </section>
+
+    <section class="section download shell" id="download">
+      <div class="download__card reveal">
+        <div class="download__copy">
+          <p class="section-no">05 / Начать</p>
+          <h2>Откройте первую<br>страницу своей хроники.</h2>
+          <p>Установщик создаст ярлыки и предложит запустить приложение. Портативная версия — просто распакуйте и запустите <code>Chronica.exe</code>.</p>
+          <div class="download__actions">
+            <a class="button button--primary" href="https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/ChronicaSetup.exe"><span class="button__icon">↓</span> Установщик · Windows x64</a>
+            <a class="button button--ghost" href="https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-portable.zip">Portable ZIP</a>
+          </div>
+          <a class="text-link" href="https://github.com/IvanSemenovVetarion/Chronica/releases">Все релизы и изменения <span>↗</span></a>
+        </div>
+        <div class="download__side">
+          <div class="requirements">
+            <h3>Что нужно</h3>
+            <ul>
+              <li>Windows 10 или 11, x64</li>
+              <li>.NET Framework 4.8</li>
+              <li>Microsoft Edge WebView2 Runtime</li>
+            </ul>
+          </div>
+          <div class="steps">
+            <h3>Первый запуск</h3>
+            <ol>
+              <li>Выберите язык</li>
+              <li>Выберите жанр и стиль</li>
+              <li>Начните свою летопись</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq shell">
+      <div class="section-head reveal">
+        <p class="section-no">06 / Вопросы</p>
+        <div><h2>Коротко о важном.</h2></div>
+      </div>
+      <div class="faq-grid">
+        <details class="reveal">
+          <summary>Куда сохраняются данные?</summary>
+          <p>В папку <code>ChronicaData</code> рядом с программой. В установленной версии — в папке установки; если она недоступна для записи, используется <code>%LocalAppData%\Chronica</code>.</p>
+        </details>
+        <details class="reveal">
+          <summary>Нужен ли интернет?</summary>
+          <p>Нет. Интернет нужен только для проверки обновлений GitHub и импорта из старых чатов через DeepSeek — и то по желанию.</p>
+        </details>
+        <details class="reveal">
+          <summary>Можно ли работать вместе?</summary>
+          <p>Да, через общую папку Яндекс Диска, Google Drive, OneDrive или сетевую папку. Без собственного сервера.</p>
+        </details>
+        <details class="reveal">
+          <summary>Как перенести миры?</summary>
+          <p>Скопируйте папку <code>ChronicaData</code> целиком рядом с новой копией программы. Резервная копия в ZIP собирает ещё и изображения, аудио и шрифты.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer__inner">
+      <div class="footer__brand">
+        <img src="assets/sigil.svg" alt="" width="34" height="34">
+        <div><strong>Chronica</strong><span>хранитель миров · v2.0.0</span></div>
+      </div>
+      <p class="footer__love">Сделано с любовью для <a href="https://vk.ru/titzero" target="_blank" rel="noreferrer">@Titzero</a><span class="rose" aria-hidden="true">✿</span></p>
+      <div class="footer__links">
+        <a href="https://github.com/IvanSemenovVetarion/Chronica" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/IvanSemenovVetarion/Chronica/blob/main/LICENSE">Лицензия</a>
+        <a href="#top">Наверх ↑</a>
+      </div>
+      <p class="footer__legal">© 2026 Vetarion. Chronica предоставляется «как есть», без гарантий. Сторонние библиотеки и шрифты распространяются по своим лицензиям.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

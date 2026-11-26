@@ -1,0 +1,118 @@
+/* =========================================================
+   Chronika DnD Edition
+   ========================================================= */
+.dnd-page .page-head { margin-bottom: 16px; }
+.dnd-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--muted-2);
+  font-size: 8.5px;
+  line-height: 1.55;
+}
+.dnd-disclaimer .icon { width: 14px; height: 14px; flex: 0 0 auto; color: var(--gold); }
+.dnd-tabs {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  padding: 4px;
+  margin-bottom: 16px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface-glass);
+  width: fit-content;
+  max-width: 100%;
+}
+.dnd-tab {
+  padding: 7px 13px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 9px;
+  cursor: pointer;
+}
+.dnd-tab:hover { color: var(--text); background: var(--hover); }
+.dnd-tab.active { color: var(--gold-bright); border-color: var(--line-strong); background: var(--active); }
+.dnd-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; color: var(--muted); font-size: 9px; }
+.dnd-sheet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+.dnd-sheet-card {
+  position: relative;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: linear-gradient(150deg, var(--surface), var(--bg-soft));
+  cursor: pointer;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.dnd-sheet-card:hover { transform: translateY(-2px); border-color: var(--line-strong); box-shadow: var(--shadow-gold); }
+.dnd-sheet-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.dnd-edition-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  color: var(--gold);
+  font-size: 7px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.dnd-sheet-delete { width: 24px; height: 24px; opacity: .6; }
+.dnd-sheet-delete .icon { width: 12px; height: 12px; }
+.dnd-sheet-card h3 { margin: 0; font-family: var(--font-display); font-size: 22px; font-weight: 400; color: var(--text-strong); }
+.dnd-sheet-card > p { margin: 2px 0 10px; color: var(--muted-2); font-size: 8.5px; }
+.dnd-mini-abilities { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.dnd-mini-abilities span { display: flex; flex-direction: column; align-items: center; padding: 5px 2px; border: 1px solid var(--line); border-radius: 5px; background: var(--input-bg); color: var(--text); font-size: 10px; }
+.dnd-mini-abilities b { color: var(--gold); font-size: 7px; letter-spacing: .05em; }
+.dnd-mini-abilities small { color: var(--muted-2); font-size: 7px; }
+.dnd-sheet-meta { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line-soft); color: var(--muted-2); font-size: 8px; }
+.dnd-sheet-meta b { color: var(--text); font-weight: 500; }
+.dnd-section-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; margin-bottom: 14px; }
+.dnd-section-head h2 { margin: 2px 0; font-family: var(--font-display); font-size: 26px; font-weight: 400; color: var(--text-strong); }
+.dnd-section-head p { margin: 0; max-width: 650px; color: var(--muted); font-size: 9px; line-height: 1.65; }
+.dnd-kicker { color: var(--gold); font-size: 7.5px; letter-spacing: .14em; text-transform: uppercase; }
+.dnd-reference-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.dnd-reference-card { padding: 13px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
+.dnd-reference-card h3 { margin: 0 0 5px; font-family: var(--font-display); font-size: 21px; font-weight: 400; color: var(--text-strong); }
+.dnd-reference-card p { margin: 0 0 10px; color: var(--muted); font-size: 9px; line-height: 1.65; }
+.dnd-reference-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.dnd-speed { color: var(--muted-2); font-size: 8px; }
+.dnd-rules-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.dnd-rule-card { padding: 13px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
+.dnd-rule-card h3 { margin: 0 0 5px; color: var(--text-strong); font-family: var(--font-display); font-size: 21px; font-weight: 400; }
+.dnd-rule-card p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.7; }
+.dnd-ability-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 7px; padding: 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--input-bg); }
+.dnd-ability-input { display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.dnd-ability-input label { color: var(--muted-2); font-size: 7px; text-transform: uppercase; letter-spacing: .04em; }
+.dnd-ability-input .input { width: 100%; height: 34px; text-align: center; font-size: 14px; }
+.dnd-ability-input small { color: var(--gold); font-size: 8px; }
+.dice-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(220px, .65fr); gap: 12px; }
+.dice-panel, .dice-history { padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.dice-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.dice-btn { min-width: 54px; height: 42px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--input-bg); color: var(--gold-bright); font-family: var(--font-display); font-size: 18px; cursor: pointer; transition: background var(--transition), border-color var(--transition), transform .15s ease; }
+.dice-btn:hover { background: var(--active); border-color: var(--gold); transform: translateY(-2px); }
+.dice-btn.is-rolling { animation: diceKick .45s ease; }
+.dice-mode-row { display: flex; gap: 5px; margin-bottom: 8px; }
+.dice-mode { padding: 5px 9px; border: 1px solid var(--line); border-radius: 5px; background: transparent; color: var(--muted); font-size: 8px; cursor: pointer; }
+.dice-mode.active, .dice-mode:hover { color: var(--gold-bright); border-color: var(--gold); background: var(--active); }
+.dice-formula-row { display: flex; gap: 6px; }
+.dice-formula-row .input { flex: 1; }
+.dice-result { display: flex; align-items: center; gap: 13px; min-height: 76px; margin-top: 12px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 9px; background: var(--input-bg); color: var(--muted); font-size: 9px; }
+.dice-result strong { color: var(--gold-bright); font-family: var(--font-display); font-size: 42px; font-weight: 400; line-height: 1; }
+.dice-history { min-height: 220px; }
+.dice-history-row { display: grid; grid-template-columns: 1fr auto; gap: 0 8px; padding: 6px 0; border-bottom: 1px solid var(--line-soft); color: var(--muted); font-size: 8px; }
+.dice-history-row strong { color: var(--gold-bright); font-size: 11px; }
+.dice-history-row small { grid-column: 1/-1; color: var(--muted-2); font-size: 7.5px; }
+@keyframes diceKick { 0%,100% { transform: translateY(0) rotate(0); } 35% { transform: translateY(-5px) rotate(-6deg); } 65% { transform: translateY(2px) rotate(4deg); } }
+@media (max-width: 800px) {
+  .dnd-sheet-grid, .dnd-reference-grid, .dnd-rules-grid { grid-template-columns: 1fr; }
+  .dnd-ability-grid { grid-template-columns: repeat(3, 1fr); }
+  .dice-layout { grid-template-columns: 1fr; }
+  .dnd-section-head { flex-direction: column; }
+}

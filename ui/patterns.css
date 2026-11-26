@@ -1,0 +1,210 @@
+/* =========================================================
+   Chronica — background patterns
+   ========================================================= */
+
+/* Sidebar pattern layer */
+html[data-pattern="contour"] .sidebar-topography {
+  background-image: url('img/contour.svg');
+  background-size: 520px auto;
+}
+html[data-pattern="stars"] .sidebar-topography {
+  background-image:
+    radial-gradient(1.2px 1.2px at 18% 12%, var(--gold) 0, transparent 2px),
+    radial-gradient(1px 1px at 72% 28%, var(--gold) 0, transparent 1.8px),
+    radial-gradient(1.5px 1.5px at 44% 64%, var(--gold) 0, transparent 2.2px),
+    radial-gradient(1px 1px at 86% 82%, var(--gold) 0, transparent 1.8px);
+  background-size: 190px 190px, 150px 150px, 230px 230px, 170px 170px;
+  opacity: .35;
+}
+html[data-pattern="runes"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M28 24l12 14-12 14M52 24v28M64 38h16M74 28v20M106 26l-10 18 16 6M132 30v20M124 44h16M28 88l10 10 10-10M58 88v24M74 94h14M112 88l-8 22 12-6 10 10M146 90l-12 16M28 138l12 12M54 150h18M80 136v18M100 140h12M126 138l12 12M152 138v16'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 240px 240px;
+  opacity: .24;
+}
+html[data-pattern="waves"] .sidebar-topography {
+  background-image:
+    repeating-radial-gradient(ellipse 120% 60% at 50% 118%, transparent 0 24px, var(--line-strong) 25px 26px, transparent 27px 52px);
+  background-size: 340px 260px;
+  opacity: .38;
+}
+html[data-pattern="grid"] .sidebar-topography {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 34px 34px;
+  opacity: .45;
+}
+html[data-pattern="crystals"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1'%3E%3Cpath d='M38 26l18 12-2 24-20 9-16-15 4-22zM138 38l22 6 8 22-15 15-22-7-4-20zM78 126l20 10 4 24-18 17-22-9-3-24zM176 144l18 6 7 18-11 14-19-4-4-18z'/%3E%3Cpath d='M54 38l2 33M152 50l14 25M98 138l-10 26M188 152l6 22' opacity='.55'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 260px 260px;
+  opacity: .24;
+}
+html[data-pattern="leaves"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='220' viewBox='0 0 200 220'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M28 190C38 140 72 104 112 82M62 150c-14-18-12-36 4-48 14 16 13 34-4 48zM80 128c-12-18-8-36 8-46 12 17 9 35-8 46zM98 108c-10-17-5-34 12-43 10 16 6 33-12 43zM34 80c18-2 32 8 36 25-18 4-33-5-36-25zM52 58c18-1 31 9 34 26-18 3-32-7-34-26zM118 68c9-17 26-23 42-15-7 18-24 25-42 15zM136 48c9-17 26-22 41-13-7 17-24 23-41 13z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 280px 300px;
+  opacity: .22;
+}
+html[data-pattern="gears"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1.2'%3E%3Ccircle cx='62' cy='62' r='22'/%3E%3Ccircle cx='62' cy='62' r='8'/%3E%3Cpath d='M62 32v10M62 82v10M32 62h10M82 62h10M41 41l7 7M76 76l7 7M83 41l-7 7M48 76l-7 7'/%3E%3Ccircle cx='162' cy='152' r='30'/%3E%3Ccircle cx='162' cy='152' r='11'/%3E%3Cpath d='M162 114v12M162 178v12M124 152h12M188 152h12M135 125l9 9M180 170l9 9M189 125l-9 9M144 170l-9 9'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 260px 260px;
+  opacity: .22;
+}
+html[data-pattern="cracks"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M12 18l34 30 12 34 28 18 6 34 30 24M58 48l-14 18M46 82l-26 8M86 100l22-10M92 134l-18 26M128 140l-6 28M154 170l26-8M12 176l28-10 20 16 28-8 18 26M196 12l-12 34 20 26-8 32 24 20'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 280px 280px;
+  opacity: .25;
+}
+
+/* Page pattern layer */
+html[data-pattern="contour"] .main-wrap::after {
+  opacity: calc(var(--star-opacity) * .8);
+}
+html[data-pattern="stars"] .main-wrap::after {
+  opacity: calc(var(--star-opacity) * 1.6);
+  background-size: 800px 800px, 600px 600px, 700px 700px, 900px 900px, 550px 550px;
+}
+html[data-pattern="runes"] .main-wrap::after {
+  opacity: .1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M24 30l18 22M24 52h20M58 30v30M76 36l-8 18 14 4M112 26v32M104 44h20M148 30l16 18-16 12M186 28v28M178 44h18M24 92l16 14-16 14M50 92v28M68 100h18M104 96l-10 22M124 94l12 24 10-24M160 96v26M152 112h18M24 158l14 14M54 158v26M76 164h18M108 158l12 12M140 158v26M158 166h18M192 158l-10 22'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 380px 380px;
+}
+html[data-pattern="waves"] .main-wrap::after {
+  opacity: .28;
+  background-image: repeating-radial-gradient(ellipse 80% 40% at 50% 110%, transparent 0 32px, var(--line-strong) 33px 34px, transparent 35px 68px);
+  background-size: 700px 460px;
+}
+html[data-pattern="grid"] .main-wrap::after {
+  opacity: .42;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+html[data-pattern="crystals"] .main-wrap::after {
+  opacity: .12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1'%3E%3Cpath d='M44 36l22 14-3 30-25 11-20-19 5-27zM178 58l27 8 9 27-18 19-27-9-5-25zM92 176l25 12 5 29-22 21-27-11-4-29zM212 200l22 8 8 22-13 18-24-5-5-22z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 500px 500px;
+}
+html[data-pattern="leaves"] .main-wrap::after {
+  opacity: .12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='340' viewBox='0 0 320 340'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M38 300c14-70 56-122 112-152M96 206c-20-24-16-48 6-64 19 21 17 45-6 64zM124 176c-16-23-9-47 12-60 16 22 10 45-12 60zM148 148c-12-22-3-43 18-53 12 20 4 42-18 53zM54 104c24-3 42 10 48 33-24 5-43-7-48-33zM82 76c23-1 40 12 44 34-23 4-41-9-44-34zM186 98c11-22 33-30 54-20-9 23-31 32-54 20zM210 72c12-22 34-29 54-17-10 22-31 29-54 17z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 520px 550px;
+}
+html[data-pattern="gears"] .main-wrap::after {
+  opacity: .12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1.2'%3E%3Ccircle cx='90' cy='86' r='34'/%3E%3Ccircle cx='90' cy='86' r='12'/%3E%3Cpath d='M90 40v14M90 118v14M44 86h14M122 86h14M58 54l10 10M112 108l10 10M122 54l-10 10M68 108l-10 10'/%3E%3Ccircle cx='234' cy='218' r='48'/%3E%3Ccircle cx='234' cy='218' r='17'/%3E%3Cpath d='M234 158v18M234 260v18M174 218h18M276 218h18M192 176l13 13M267 251l13 13M276 176l-13 13M205 251l-13 13'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 560px 560px;
+}
+html[data-pattern="cracks"] .main-wrap::after {
+  opacity: .14;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M18 22l48 42 16 54 44 26 8 52 46 34M92 66l-20 24M74 118l-38 12M126 144l32-14M134 196l-26 38M186 206l-8 40M224 248l38-12M18 282l40-16 28 24 40-12 26 38M300 16l-18 48 28 36-10 44 34 28'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 660px 660px;
+}
+
+/* Pattern chooser */
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 9px;
+}
+.pattern-option {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--muted);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+.pattern-option:hover { border-color: var(--line-strong); color: var(--text); }
+.pattern-option.active { border-color: var(--gold); background: var(--active); color: var(--text-strong); }
+.pattern-swatch {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background-color: var(--bg-raised);
+}
+.pattern-swatch[data-pattern-swatch="contour"] { background-image: url('img/contour.svg'); background-size: 100px auto; }
+.pattern-swatch[data-pattern-swatch="stars"] { background-image: radial-gradient(1px 1px at 20% 20%, var(--gold) 0, transparent 2px), radial-gradient(1px 1px at 70% 60%, var(--gold) 0, transparent 2px); background-size: 30px 30px; }
+.pattern-swatch[data-pattern-swatch="runes"] { background-image: linear-gradient(45deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%), linear-gradient(-45deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%); background-size: 18px 18px; }
+.pattern-swatch[data-pattern-swatch="waves"] { background-image: repeating-radial-gradient(ellipse at 50% 110%, transparent 0 8px, var(--line-strong) 9px 10px, transparent 11px 18px); }
+.pattern-swatch[data-pattern-swatch="grid"] { background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 9px 9px; }
+.pattern-swatch[data-pattern-swatch="crystals"] { background-image: linear-gradient(135deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%), linear-gradient(45deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%); background-size: 15px 15px; }
+.pattern-swatch[data-pattern-swatch="leaves"] { background-image: repeating-linear-gradient(120deg, transparent 0 8px, var(--line-strong) 9px 10px, transparent 11px 16px); }
+.pattern-swatch[data-pattern-swatch="gears"] { background-image: radial-gradient(circle at 50% 50%, transparent 0 5px, var(--line-strong) 6px 7px, transparent 8px 12px), radial-gradient(circle at 50% 50%, var(--line-strong) 1px, transparent 2px); background-size: 22px 22px; }
+.pattern-swatch[data-pattern-swatch="cracks"] { background-image: linear-gradient(115deg, transparent 48%, var(--line-strong) 49% 51%, transparent 52%), linear-gradient(65deg, transparent 48%, var(--line-strong) 49% 51%, transparent 52%); background-size: 13px 13px; }
+.pattern-option-copy { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.pattern-option-copy strong { font-size: 8.5px; color: var(--text); font-weight: 600; }
+.pattern-option-copy small { font-size: 7px; color: var(--muted-2); line-height: 1.3; }
+html[data-theme="light"] .pattern-option { background: rgba(255,255,255,.4); }
+
+@media (max-width: 760px) {
+  .pattern-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---------- Дополнительные узоры ---------- */
+html[data-pattern="hex"] .sidebar-topography {
+  background-image:
+    linear-gradient(30deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong)),
+    linear-gradient(150deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong)),
+    linear-gradient(30deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong)),
+    linear-gradient(150deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong));
+  background-size: 44px 76px;
+  background-position: 0 0, 0 0, 22px 38px, 22px 38px;
+  opacity: .32;
+}
+html[data-pattern="aurora"] .sidebar-topography {
+  background-image:
+    radial-gradient(ellipse at 20% 20%, var(--gold) 0, transparent 36%),
+    radial-gradient(ellipse at 80% 65%, var(--green) 0, transparent 40%),
+    radial-gradient(ellipse at 45% 100%, var(--blue) 0, transparent 38%);
+  background-size: 420px 420px;
+  opacity: .16;
+}
+html[data-pattern="circuit"] .sidebar-topography {
+  background-image:
+    linear-gradient(90deg, transparent 46%, var(--line-strong) 47% 53%, transparent 54%),
+    linear-gradient(transparent 46%, var(--line-strong) 47% 53%, transparent 54%),
+    radial-gradient(circle, var(--gold) 0 1.5px, transparent 2px);
+  background-size: 54px 54px, 54px 54px, 108px 108px;
+  opacity: .32;
+}
+html[data-pattern="dunes"] .sidebar-topography {
+  background-image:
+    repeating-radial-gradient(ellipse 150% 65% at 50% 120%, transparent 0 28px, var(--line-strong) 29px 30px, transparent 31px 60px);
+  background-size: 420px 260px;
+  opacity: .36;
+}
+html[data-pattern="snow"] .sidebar-topography {
+  background-image:
+    radial-gradient(1.5px 1.5px at 18% 22%, var(--gold) 0, transparent 2.2px),
+    radial-gradient(1px 1px at 66% 38%, var(--gold) 0, transparent 1.8px),
+    radial-gradient(2px 2px at 82% 74%, var(--gold) 0, transparent 2.6px),
+    radial-gradient(1px 1px at 38% 86%, var(--gold) 0, transparent 1.8px);
+  background-size: 180px 180px, 230px 230px, 280px 280px, 210px 210px;
+  opacity: .3;
+}
+html[data-pattern="bamboo"] .sidebar-topography {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='260' viewBox='0 0 180 260'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M34 10v240M62 20v230M132 8v244M154 30v210'/%3E%3Cpath d='M34 56h28M34 108h28M34 166h28M34 220h28M62 74h28M62 132h28M62 190h28M132 46h22M132 98h22M132 152h22M132 208h22M154 68h18M154 124h18M154 180h18'/%3E%3Cpath d='M48 56c-10-14-8-26 2-34 8 12 7 24-2 34zM76 74c-10-14-8-26 2-34 8 12 7 24-2 34zM144 98c10-14 8-26-2-34-8 12-7 24 2 34z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 230px 330px;
+  opacity: .22;
+}
+html[data-pattern="hex"] .main-wrap::after { opacity: .18; background-image: linear-gradient(30deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong)), linear-gradient(150deg, var(--line-strong) 12%, transparent 12.5%, transparent 87%, var(--line-strong) 87.5%, var(--line-strong)); background-size: 68px 118px; }
+html[data-pattern="aurora"] .main-wrap::after { opacity: .26; background-image: radial-gradient(ellipse at 20% 20%, var(--gold) 0, transparent 32%), radial-gradient(ellipse at 80% 70%, var(--green) 0, transparent 36%), radial-gradient(ellipse at 55% 100%, var(--blue) 0, transparent 32%); background-size: 720px 620px; }
+html[data-pattern="circuit"] .main-wrap::after { opacity: .18; background-image: linear-gradient(90deg, transparent 47%, var(--line-strong) 48% 52%, transparent 53%), linear-gradient(transparent 47%, var(--line-strong) 48% 52%, transparent 53%), radial-gradient(circle, var(--gold) 0 1.5px, transparent 2px); background-size: 88px 88px, 88px 88px, 176px 176px; }
+html[data-pattern="dunes"] .main-wrap::after { opacity: .22; background-image: repeating-radial-gradient(ellipse 80% 40% at 50% 110%, transparent 0 40px, var(--line-strong) 41px 42px, transparent 43px 86px); background-size: 760px 520px; }
+html[data-pattern="snow"] .main-wrap::after { opacity: .18; background-image: radial-gradient(2px 2px at 18% 22%, var(--gold) 0, transparent 2.5px), radial-gradient(1px 1px at 66% 38%, var(--gold) 0, transparent 1.8px), radial-gradient(2.5px 2.5px at 82% 74%, var(--gold) 0, transparent 3px), radial-gradient(1px 1px at 38% 86%, var(--gold) 0, transparent 1.8px); background-size: 420px 420px, 320px 320px, 520px 520px, 280px 280px; }
+html[data-pattern="bamboo"] .main-wrap::after { opacity: .1; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400' viewBox='0 0 300 400'%3E%3Cg fill='none' stroke='%23c5a15f' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M40 0v400M82 20v380M220 0v400M260 30v370'/%3E%3Cpath d='M40 70h42M40 156h42M40 250h42M40 344h42M82 118h42M82 210h42M82 306h42M220 62h40M220 158h40M220 252h40M220 346h40M260 114h40M260 208h40M260 304h40'/%3E%3C/g%3E%3C/svg%3E"); background-size: 430px 560px; }
+.pattern-swatch[data-pattern-swatch="hex"] { background-image: linear-gradient(30deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%), linear-gradient(150deg, transparent 45%, var(--line-strong) 46% 54%, transparent 55%); background-size: 12px 20px; }
+.pattern-swatch[data-pattern-swatch="aurora"] { background-image: radial-gradient(ellipse at 30% 30%, var(--gold) 0, transparent 40%), radial-gradient(ellipse at 70% 70%, var(--green) 0, transparent 45%); }
+.pattern-swatch[data-pattern-swatch="circuit"] { background-image: linear-gradient(90deg, transparent 46%, var(--line-strong) 47% 53%, transparent 54%), linear-gradient(transparent 46%, var(--line-strong) 47% 53%, transparent 54%); background-size: 14px 14px; }
+.pattern-swatch[data-pattern-swatch="dunes"] { background-image: repeating-radial-gradient(ellipse at 50% 110%, transparent 0 7px, var(--line-strong) 8px 9px, transparent 10px 17px); }
+.pattern-swatch[data-pattern-swatch="snow"] { background-image: radial-gradient(1px 1px at 20% 30%, var(--gold) 0, transparent 2px), radial-gradient(1.5px 1.5px at 70% 65%, var(--gold) 0, transparent 2.4px); background-size: 22px 22px; }
+.pattern-swatch[data-pattern-swatch="bamboo"] { background-image: repeating-linear-gradient(90deg, transparent 0 8px, var(--line-strong) 9px 10px, transparent 11px 17px), repeating-linear-gradient(0deg, transparent 0 13px, var(--line-strong) 14px 15px, transparent 16px 24px); }

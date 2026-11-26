@@ -1,0 +1,48 @@
+name: Ошибка
+description: Сообщить о проблеме в Chronica
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за отчёт. Не прикладывайте личные миры, API-ключи и `settings.json`.
+        Если проблема связана с безопасностью, используйте Security Advisories,
+        а не публичный issue.
+  - type: input
+    id: version
+    attributes:
+      label: Версия Chronica
+      description: Настройки → О программе
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows и WebView2
+      placeholder: "Windows 11 23H2, WebView2 1.0.xxxx"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Что произошло
+      description: Опишите шаги, ожидаемое и фактическое поведение
+      placeholder: |
+        1. Открыл...
+        2. Нажал...
+        3. Получил...
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Лог ошибки
+      description: Фрагмент `ChronicaData\chronica.log` без личных данных
+      render: text
+  - type: markdown
+    attributes:
+      value: |
+        Скриншоты можно приложить к issue после его создания — без личных данных
+        и содержимого ваших миров.

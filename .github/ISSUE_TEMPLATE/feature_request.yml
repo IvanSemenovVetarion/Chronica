@@ -1,0 +1,37 @@
+name: Идея
+description: Предложить новую возможность для Chronica
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу это решает?
+      description: Опишите ситуацию, в которой текущей возможности не хватает
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Как это могло бы выглядеть
+      description: Опишите желаемое поведение или интерфейс
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Альтернативы
+      description: Что вы пробовали вместо этого?
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Область
+      options:
+        - label: Интерфейс
+        - label: Миры, герои и связи
+        - label: Древо рода
+        - label: Карта мира
+        - label: Экспорт и резервные копии
+        - label: Совместная работа
+        - label: Производительность
+        - label: Документация
