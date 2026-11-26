@@ -27,9 +27,7 @@
 - **Полное руководство:** [`README.txt`](README.txt)
 - **Исходный код:** <https://github.com/IvanSemenovVetarion/Chronica>
 
-> Ссылки настроены на репозиторий `IvanSemenovVetarion/Chronica`. Если назовёте
-> репозиторий иначе, замените `Chronica` в README, `docs/index.html` и в настройках
-> приложения.
+
 
 ## Скачать
 
