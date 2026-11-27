@@ -1069,9 +1069,11 @@
 
   function resolveBridgeResponse(response) {
     if (!response || response.id == null) return;
-    const pending = bridgePending.get(response.id);
+    const key = typeof response.id === 'string' && response.id !== '' ? Number(response.id) : response.id;
+    if (isNaN(key)) return;
+    const pending = bridgePending.get(key);
     if (!pending) return;
-    bridgePending.delete(response.id);
+    bridgePending.delete(key);
     clearTimeout(pending.timer);
     if (response.ok) pending.resolve(response.result);
     else pending.reject(new Error(response.error || 'Неизвестная ошибка приложения'));

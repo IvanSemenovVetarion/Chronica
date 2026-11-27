@@ -10,7 +10,7 @@ android {
         applicationId = "com.vetarion.chronica"
         minSdk = 24
         targetSdk = 34
-        versionCode = 201
+        versionCode = 203
         versionName = "2.0.1"
     }
 

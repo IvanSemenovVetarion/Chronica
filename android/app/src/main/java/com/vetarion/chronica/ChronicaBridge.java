@@ -762,10 +762,19 @@ public class ChronicaBridge {
         return format.format(new Date());
     }
 
+    private Object idValue(String id) {
+        if (id == null) return JSONObject.NULL;
+        try {
+            return Long.parseLong(id);
+        } catch (Exception ignored) {
+            return id;
+        }
+    }
+
     private void reply(String id, Object result) {
         try {
             JSONObject response = new JSONObject();
-            response.put("id", id);
+            response.put("id", idValue(id));
             response.put("ok", true);
             response.put("result", result == null ? JSONObject.NULL : result);
             evaluate(response);
@@ -776,7 +785,7 @@ public class ChronicaBridge {
     private void replyError(String id, String message) {
         try {
             JSONObject response = new JSONObject();
-            response.put("id", id);
+            response.put("id", idValue(id));
             response.put("ok", false);
             response.put("error", message == null ? "Неизвестная ошибка" : message);
             evaluate(response);
