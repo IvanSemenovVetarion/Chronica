@@ -4,7 +4,7 @@
   <p><strong>Тихая мастерская для больших историй.</strong></p>
   <p>Миры, герои, древо рода, карта и летопись — в одном локальном приложении для Windows.</p>
 
-  [![Release](https://img.shields.io/badge/release-v2.0.0-d3ac68?style=flat-square)](https://github.com/IvanSemenovVetarion/Chronica/releases)
+  [![Release](https://img.shields.io/badge/release-v2.0.1-d3ac68?style=flat-square)](https://github.com/IvanSemenovVetarion/Chronica/releases)
   [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-1f6feb?style=flat-square)](#требования)
   [![License](https://img.shields.io/badge/license-MIT-7f8f6b?style=flat-square)](LICENSE)
   [![GitHub Pages](https://img.shields.io/badge/site-GitHub%20Pages-8a6b34?style=flat-square)](https://ivansemenovvetarion.github.io/Chronica/)

@@ -300,7 +300,8 @@ LICENSE рядом с программой.
 Сторонние компоненты и шрифты:
   • THIRD_PARTY_NOTICES.md — сводные уведомления;
   • licenses\webview2\ — лицензия Microsoft Edge WebView2 SDK;
-  • licenses\OFL-1.1.txt — лицензия шрифтов Cormorant, Forum, Manrope.
+  • licenses\OFL-1.1.txt — лицензия шрифтов Lora, Inter,
+    Cormorant, Forum и Manrope.
 
 Название и логотип Chronica принадлежат автору проекта. Подробнее —
 TRADEMARKS.md.

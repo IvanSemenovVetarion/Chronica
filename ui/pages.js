@@ -219,7 +219,7 @@
       MF.THEMES.map(function (theme) {
         return '<button class="theme-row ' + (MF.getTheme() === theme.id ? 'active' : '') + '" data-theme-choice="' + MF.esc(theme.id) + '" aria-label="Тема ' + MF.esc(theme.label) + '">' +
           '<span class="theme-row-swatch" style="background:linear-gradient(145deg,' + MF.esc(theme.bg) + ',' + MF.esc(theme.surface) + ');border-color:' + MF.esc(theme.accent) + '77">' +
-          '<i style="background:' + MF.esc(theme.accent) + '"></i><i style="background:' + MF.esc(theme.surface) + '"></i></span>' +
+          '<i style="background:' + MF.esc(theme.bg) + '"></i><i style="background:' + MF.esc(theme.surface) + '"></i><i style="background:' + MF.esc(theme.accent) + '"></i></span>' +
           '<span class="theme-row-copy"><strong>' + MF.esc(theme.label) + '</strong><small>' + MF.esc(theme.hint) + '</small></span>' +
           '<span class="chk">' + MF.icon('i-check') + '</span></button>';
       }).join('') +

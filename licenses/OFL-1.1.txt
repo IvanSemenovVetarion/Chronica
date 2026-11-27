@@ -15,6 +15,14 @@ Version 1.1:
   Copyright 2018 The Manrope Project Authors
   https://github.com/googlefonts/manrope
 
+  Lora
+  Copyright 2011 The Lora Project Authors
+  https://github.com/cyrealtype/Lora-Cyrillic
+
+  Inter
+  Copyright 2016 The Inter Project Authors
+  https://github.com/rsms/inter
+
 
 -----------------------------------------------------------
 SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007

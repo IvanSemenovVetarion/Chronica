@@ -5,7 +5,7 @@
   'use strict';
   const MF = window.MF = window.MF || {};
 
-  MF.VERSION = '2.0.0';
+  MF.VERSION = '2.0.1';
   MF.EDITION = 'standard';
   try {
     const editionParam = new URLSearchParams(window.location.search || '').get('edition');
@@ -92,7 +92,7 @@
     { id: 'deepseek-reasoner', label: 'DeepSeek Reasoner · глубокий разбор' }
   ];
   MF.THEMES = [
-    { id: 'dark', label: 'Полночь', mode: 'dark', bg: '#091118', surface: '#14232e', accent: '#c5a15f', hint: 'Золото и звёзды' },
+    { id: 'dark', label: 'Полночь', mode: 'dark', bg: '#12100e', surface: '#24211e', accent: '#d4af37', hint: 'Тёплая бумага и латунь' },
     { id: 'emerald', label: 'Изумруд', mode: 'dark', bg: '#07130f', surface: '#11291f', accent: '#8fbf9f', hint: 'Мох и серебро' },
     { id: 'rosequartz', label: 'Розовый кварц', mode: 'dark', bg: '#150c12', surface: '#2c1823', accent: '#d3a3ad', hint: 'Нежный камень' },
     { id: 'wine', label: 'Багровый двор', mode: 'dark', bg: '#12080b', surface: '#2b151b', accent: '#c0837b', hint: 'Вино и медь' },
@@ -119,7 +119,7 @@
     { id: 'frost', label: 'Иней', mode: 'dark', bg: '#08121a', surface: '#102630', accent: '#a8d8ea', hint: 'Лёд и северное сияние' }
   ];
   MF.FONTS = [
-    { id: 'forum', label: 'Форум', sample: 'Аа Бб', hint: 'Текущий книжный стиль' },
+    { id: 'forum', label: 'Книжный', sample: 'Аа Бб', hint: 'Lora и Inter' },
     { id: 'manuscript', label: 'Манускрипт', sample: 'Аа Бб', hint: 'Изящная антиква' },
     { id: 'antiqua', label: 'Антиква', sample: 'Аа Бб', hint: 'Классическая книга' },
     { id: 'classic', label: 'Классика', sample: 'Аа Бб', hint: 'Георгиевский шрифт' },

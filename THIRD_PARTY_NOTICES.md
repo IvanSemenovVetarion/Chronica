@@ -28,11 +28,13 @@ Microsoft Edge WebView2 Runtime не входит в репозиторий и �
 
 В `ui/fonts/` и `docs/assets/fonts/` используются шрифты:
 
+- **Lora** — Copyright 2011 The Lora Project Authors;
+- **Inter** — Copyright 2016 The Inter Project Authors;
 - **Cormorant** — Copyright 2015 the Cormorant Project Authors;
 - **Forum** — Copyright (c) 2011, Denis Masharov;
 - **Manrope** — Copyright 2018 The Manrope Project Authors.
 
-Все три шрифта распространяются по **SIL Open Font License 1.1**. Полный текст
+Все шрифты распространяются по **SIL Open Font License 1.1**. Полный текст
 и copyright-уведомления: [`licenses/OFL-1.1.txt`](licenses/OFL-1.1.txt).
 
 ## .NET Framework

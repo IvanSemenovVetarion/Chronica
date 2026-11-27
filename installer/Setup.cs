@@ -48,7 +48,7 @@ namespace MifariumSetup
         private static readonly string StartMenuFolder = IsDnd ? "Chronika DnD Edition" : "Chronica";
         private static readonly string AppProcessName = IsDnd ? "ChronicaDnD" : "Chronica";
         private static readonly string UninstallKey = @"Software\Microsoft\Windows\CurrentVersion\Uninstall\" + InstallFolder;
-        private const string AppVersion = "2.0.0";
+        private const string AppVersion = "2.0.1";
         private const string Publisher = "Vetarion";
         private const string WebView2Url = "https://go.microsoft.com/fwlink/p/?LinkId=2124703";
 
