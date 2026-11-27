@@ -283,7 +283,7 @@
       '<div class="settings-row" style="margin-top:12px"><div class="settings-row-copy"><strong>Начать новую летопись</strong><span>Очистить все записи и создать пустой мир. Текущие данные можно сначала сохранить в резервную копию.</span></div>' +
       '<button class="btn btn-soft btn-sm" data-action="start-clean">Создать мир</button></div></section>' +
 
-      '<section class="panel settings-card"><div class="section-heading"><h2 class="section-title">' + MF.icon('i-folder') + 'Данные</h2><span class="section-kicker">' + (native ? 'На этом компьютере' : 'Предпросмотр') + '</span></div>' +
+      '<section class="panel settings-card"><div class="section-heading"><h2 class="section-title">' + MF.icon('i-folder') + 'Данные</h2><span class="section-kicker">' + (MF.isAndroid ? 'На этом телефоне' : native ? 'На этом компьютере' : 'Предпросмотр') + '</span></div>' +
       '<p class="settings-description">Записи автоматически сохраняются в JSON, изображения — в отдельную папку. Резервная копия собирает их в один архив.</p>' +
       '<div class="settings-row"><div class="settings-row-copy"><strong>Резервная копия</strong><span>Создать архив всех миров и изображений.</span></div>' +
       '<button class="btn btn-soft btn-sm" data-action="backup">' + MF.icon('i-download') + 'Сохранить копию</button></div>' +
@@ -295,8 +295,8 @@
       '<button class="btn btn-soft btn-sm" data-action="export-excel">' + MF.icon('i-table') + 'Excel</button></div>' +
       '<div class="settings-row"><div class="settings-row-copy"><strong>Экспорт JSON</strong><span>Полная летопись одним файлом для переноса или обработки.</span></div>' +
       '<button class="btn btn-soft btn-sm" data-action="export-json">' + MF.icon('i-download') + 'JSON</button></div>' +
-      '<div class="settings-row"><div class="settings-row-copy"><strong>Папка данных</strong><span>Открыть расположение файлов в проводнике.</span></div>' +
-      '<button class="btn btn-soft btn-sm" data-action="open-data-folder">' + MF.icon('i-external') + 'Открыть</button></div>' +
+      (MF.isAndroid ? '' : '<div class="settings-row"><div class="settings-row-copy"><strong>Папка данных</strong><span>Открыть расположение файлов в проводнике.</span></div>' +
+      '<button class="btn btn-soft btn-sm" data-action="open-data-folder">' + MF.icon('i-external') + 'Открыть</button></div>') +
       '<div class="storage-path" id="storageInfoPath">' + MF.esc(info.storagePath || (native ? 'Определяем…' : 'Локальное хранилище браузера (режим предпросмотра)')) + '</div>' +
       '<div class="storage-stats"><span>Размер летописи: <strong id="storageInfoSize">' + (info.dataSize ? MF.formatBytes(info.dataSize) : '—') + '</strong></span>' +
       '<span>Иллюстрации: <strong id="storageInfoImages">' + (info.imageCount != null ? info.imageCount + ' ' + MF.plural(info.imageCount, 'файл', 'файла', 'файлов') : '—') + '</strong></span>' +
@@ -398,7 +398,7 @@
       '<g class="rose-petals"><path d="M27 10c5 0 9 4 9 9 0 6-4 10-9 10s-9-4-9-10c0-5 4-9 9-9z"/><path d="M18 15c-4 3-4 9 0 13 3 3 7 3 10 0"/><path d="M36 15c4 3 4 9 0 13-3 3-7 3-10 0"/><path d="M22 25c2 4 8 4 10 0"/></g></svg></button></div>' +
       '<div class="about-dedication">Автор проекта<span>Vetarion</span></div>' +
       '<button class="btn btn-subtle btn-sm about-github" data-action="open-github">' + MF.icon('i-external') + 'GitHub проекта</button>' +
-      '<div class="about-foot">Создано для художников, писателей и мастеров воображаемых земель.<br>' + (native ? 'Настольное издание · Windows' : 'Веб-предпросмотр') + '</div></section>' +
+      '<div class="about-foot">Создано для художников, писателей и мастеров воображаемых земель.<br>' + (MF.isAndroid ? 'Мобильное издание · Android' : native ? 'Настольное издание · Windows' : 'Веб-предпросмотр') + '</div></section>' +
       '</div></div></div>';
   };
 

@@ -43,7 +43,7 @@ public class ChronicaBridge {
     private static final int REQ_EXPORT = 4107;
 
     private static final String VERSION = "2.0.1";
-    private static final int BUILD = 203;
+    private static final int BUILD = 204;
     private static final String APP_NAME = "Chronica";
 
     private final Activity activity;

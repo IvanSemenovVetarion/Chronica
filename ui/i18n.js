@@ -281,6 +281,8 @@
     'Нажмите на розу': 'Click the rose',
     'GitHub проекта': 'Project GitHub',
     'Настольное издание · Windows': 'Desktop edition · Windows',
+    'Мобильное издание · Android': 'Mobile edition · Android',
+    'На этом телефоне': 'On this phone',
     'Веб-предпросмотр': 'Web preview',
     'Проверка ещё не выполнялась.': 'No update check yet.',
     'Не подключено': 'Not connected',
