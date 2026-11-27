@@ -390,7 +390,7 @@
       '<p class="bg-hint">Для обновления добавьте в GitHub Release файл установщика <strong>' + (MF.EDITION === 'dnd' ? 'ChronicaDnDSetup.exe' : 'ChronicaSetup.exe') + '</strong>. Приложение скачает его и предложит запустить.</p></section>' +
 
       '<section class="panel settings-card about-card"><div class="about-sigil" style="color:var(--gold)">' + MF.settingsSigil() + '</div>' +
-      '<div class="about-title">' + MF.esc(MF.getAppName()) + '</div><div class="about-version">' + (MF.EDITION === 'dnd' ? 'D&D Edition' : 'хранитель миров') + ' · v' + MF.esc(MF.VERSION) + '</div>' +
+      '<div class="about-title">' + MF.esc(MF.getAppName()) + '</div><div class="about-version">' + (MF.EDITION === 'dnd' ? 'D&D Edition' : 'хранитель миров') + ' · v' + MF.esc(MF.VERSION) + (MF.isAndroid && MF.state.info && MF.state.info.build ? ' · сборка ' + MF.esc(String(MF.state.info.build)) : '') + '</div>' +
       '<p class="about-text">Тихий кабинет для больших историй. Ваши миры, герои, рисунки и хроники остаются только у вас — без облака и регистрации.</p>' +
       '<div class="about-love"><span>' + MF.t('Сделано с любовью для') + '</span> <a class="about-love-link" href="https://vk.ru/titzero" target="_blank" rel="noreferrer">@Titzero</a>' +
       '<button type="button" class="about-rose" data-action="bloom-rose" title="' + MF.t('Нажмите на розу') + '" aria-label="' + MF.t('Нажмите на розу') + '">' +

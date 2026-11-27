@@ -43,6 +43,7 @@ public class ChronicaBridge {
     private static final int REQ_EXPORT = 4107;
 
     private static final String VERSION = "2.0.1";
+    private static final int BUILD = 203;
     private static final String APP_NAME = "Chronica";
 
     private final Activity activity;
@@ -148,6 +149,7 @@ public class ChronicaBridge {
                         result.put("edition", "standard");
                         result.put("editionName", APP_NAME);
                         result.put("version", VERSION);
+                        result.put("build", BUILD);
                         result.put("storagePath", dataDir.getAbsolutePath());
                         result.put("dataFile", new File(dataDir, "chronica.json").getAbsolutePath());
                         result.put("imagesPath", imagesDir.getAbsolutePath());
