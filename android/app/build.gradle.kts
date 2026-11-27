@@ -30,7 +30,7 @@ android {
     }
 
     sourceSets {
-        getByName("main").assets.srcDirs("../../ui")
+        getByName("main").assets.srcDirs("../../ui", "src/main/assets")
     }
 
     packaging {
