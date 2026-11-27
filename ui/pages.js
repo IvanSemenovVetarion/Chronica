@@ -358,7 +358,7 @@
       }).join('') + '</div>' +
       '<p class="bg-hint">Иконки: <strong>128×128 px</strong> (минимум 64×64), квадратные PNG или SVG с прозрачным фоном, до 5 МБ. Они отображаются в меню слева.</p></section>' +
 
-      '<section class="panel settings-card"><div class="section-heading"><h2 class="section-title">' + MF.icon('i-link') + 'Совместная работа</h2><span class="section-kicker">Общая папка</span></div>' +
+      '<section class="panel settings-card sync-card"><div class="section-heading"><h2 class="section-title">' + MF.icon('i-link') + 'Совместная работа</h2><span class="section-kicker">Общая папка</span></div>' +
       '<p class="settings-description">Выберите папку, которую синхронизирует Яндекс Диск, Google Drive или OneDrive. Каждый участник работает со своей копией, а Chronica объединяет изменения по времени записи.</p>' +
       '<div class="sync-status" id="syncStatus">Не подключено</div>' +
       '<div class="sync-folder-row"><input class="input" id="syncFolderInput" readonly placeholder="Папка не выбрана"><button class="btn btn-soft btn-sm" data-action="choose-sync-folder">' + MF.icon('i-folder') + 'Выбрать</button></div>' +

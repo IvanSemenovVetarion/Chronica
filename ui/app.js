@@ -1064,9 +1064,10 @@
   /* ---------- Bridge ---------- */
   const bridgePending = new Map();
   let bridgeSeq = 0;
-  MF.isNative = !!(window.chrome && window.chrome.webview && typeof window.chrome.webview.postMessage === 'function');
+  MF.isAndroid = !!(window.ChronicaAndroid && typeof window.ChronicaAndroid.invoke === 'function');
+  MF.isNative = MF.isAndroid || !!(window.chrome && window.chrome.webview && typeof window.chrome.webview.postMessage === 'function');
 
-  window.__mifariumBridge = function (response) {
+  function resolveBridgeResponse(response) {
     if (!response || response.id == null) return;
     const pending = bridgePending.get(response.id);
     if (!pending) return;
@@ -1074,8 +1075,15 @@
     clearTimeout(pending.timer);
     if (response.ok) pending.resolve(response.result);
     else pending.reject(new Error(response.error || 'Неизвестная ошибка приложения'));
+  }
+  window.__mifariumBridge = resolveBridgeResponse;
+  window.__chronicaAndroidBridge = function (response) {
+    if (typeof response === 'string') {
+      try { response = JSON.parse(response); } catch (e) { return; }
+    }
+    resolveBridgeResponse(response);
   };
-  if (MF.isNative && window.chrome.webview.addEventListener) {
+  if (!MF.isAndroid && MF.isNative && window.chrome.webview.addEventListener) {
     window.chrome.webview.addEventListener('message', function (event) {
       window.__mifariumBridge(event.data);
     });
@@ -1095,7 +1103,11 @@
       }, opts.timeoutMs || 30000);
       bridgePending.set(id, { resolve: resolve, reject: reject, timer: timer });
       try {
-        window.chrome.webview.postMessage({ id: id, method: method, args: args || {} });
+        if (MF.isAndroid) {
+          window.ChronicaAndroid.invoke(method, JSON.stringify(args || {}), String(id));
+        } else {
+          window.chrome.webview.postMessage({ id: id, method: method, args: args || {} });
+        }
       } catch (e) {
         clearTimeout(timer);
         bridgePending.delete(id);
@@ -2144,6 +2156,7 @@
   };
 
   document.addEventListener('DOMContentLoaded', function () {
+    if (MF.isAndroid) document.documentElement.classList.add('platform-android');
     if (MF.onboardingNeeded && MF.onboardingNeeded() && MF.startOnboarding) {
       MF.startOnboarding();
     } else {

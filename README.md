@@ -6,6 +6,7 @@
 
   [![Release](https://img.shields.io/badge/release-v2.0.1-d3ac68?style=flat-square)](https://github.com/IvanSemenovVetarion/Chronica/releases)
   [![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-1f6feb?style=flat-square)](#требования)
+  [![Android](https://img.shields.io/badge/Android-7.0%2B-3ddc84?style=flat-square)](ANDROID.md)
   [![License](https://img.shields.io/badge/license-MIT-7f8f6b?style=flat-square)](LICENSE)
   [![GitHub Pages](https://img.shields.io/badge/site-GitHub%20Pages-8a6b34?style=flat-square)](https://ivansemenovvetarion.github.io/Chronica/)
 </div>
@@ -35,6 +36,7 @@
 |---|---|
 | [**ChronicaSetup.exe**](https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/ChronicaSetup.exe) | Установщик для Windows 10/11 x64. Создаёт ярлыки и запись в «Приложениях». |
 | [**Chronica-portable.zip**](https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-portable.zip) | Портативная версия. Распакуйте и запустите `Chronica.exe`. |
+| [**Chronica-Android-2.0.1.apk**](https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-Android-2.0.1.apk) | Android 7.0+. Адаптивное приложение для телефона и планшета. |
 | [Все релизы](https://github.com/IvanSemenovVetarion/Chronica/releases) | История версий и заметки к обновлениям. |
 
 После установки Chronica проверяет обновления через GitHub Releases. Если
@@ -132,6 +134,22 @@
 
 Данные будут созданы в папке `ChronicaData` рядом с программой.
 
+### Android
+
+Установите `Chronica-Android-2.0.1.apk` на Android 7.0+. На телефоне меню
+становится выдвижным, карточки и формы — одноколоночными; на планшете
+сохраняется двухколоночная компоновка. Данные хранятся внутри приложения.
+
+Перенос между Windows и Android:
+
+- **Windows → Android:** экспортируйте JSON или ZIP-копию в настройках Windows,
+  затем в Android выберите **Настройки → Данные → Восстановить**.
+- **Android → Windows:** экспортируйте JSON или ZIP в Android и восстановите
+  файл в Windows.
+- ZIP переносит изображения, аудио и шрифты; JSON — только текст и ссылки.
+
+Подробнее: [`ANDROID.md`](ANDROID.md).
+
 ## Где хранятся данные
 
 ```
@@ -173,8 +191,17 @@ build.cmd
 - `dist\ChronicaSetup.exe` — установщик;
 - `dist\Chronica-portable.zip` — портативная версия.
 
+Android APK:
+
+```bat
+build-android.cmd
+```
+
+Результат: `dist\Chronica-Android-2.0.1.apk`.
+
 `build/`, `dist/`, `backups/` и пользовательские папки данных исключены из Git.
-Сборка не требует npm, Node.js или Visual Studio.
+Для Windows-сборки не нужны npm, Node.js или Visual Studio. Для Android нужны
+JDK 17 и Android SDK 35; подробности — в [`ANDROID.md`](ANDROID.md).
 
 ## Структура проекта
 
@@ -182,11 +209,14 @@ build.cmd
 src/            C#: запуск, окно, мост JavaScript ↔ C#, экспорт, обновления
 installer/      установщик и деинсталлятор
 ui/             интерфейс: HTML, CSS, JavaScript, шрифты и изображения
+android/        Android-оболочка WebView и файловый мост
 vendor/         WebView2 SDK
 docs/           страница проекта для GitHub Pages
 licenses/       тексты сторонних лицензий
 build.cmd       сборка приложения и установщика
+build-android.cmd сборка APK
 README.txt      подробное руководство пользователя
+ANDROID.md      Android-версия и обмен данными
 ```
 
 

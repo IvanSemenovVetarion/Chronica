@@ -105,6 +105,7 @@ https://ivansemenovvetarion.github.io/Chronica/
 
 ```bat
 build.cmd
+build-android.cmd
 ```
 
 Появятся:
@@ -113,6 +114,7 @@ build.cmd
 dist\Chronica\Chronica.exe
 dist\ChronicaSetup.exe
 dist\Chronica-portable.zip
+dist\Chronica-Android-2.0.1.apk
 ```
 
 Убедитесь, что в `dist\Chronica` нет папки `ChronicaData`, а в архиве нет
@@ -121,12 +123,13 @@ dist\Chronica-portable.zip
 ## 5. Опубликуйте релиз
 
 1. Откройте репозиторий → **Releases → Draft a new release**.
-2. Tag: `v2.0.0`.
-3. Title: `Chronica 2.0.0`.
+2. Tag: `v2.0.1`.
+3. Title: `Chronica 2.0.1`.
 4. Вставьте описание из [`CHANGELOG.md`](CHANGELOG.md).
 5. Прикрепите файлы:
    - `ChronicaSetup.exe`;
-   - `Chronica-portable.zip`.
+   - `Chronica-portable.zip`;
+   - `Chronica-Android-2.0.1.apk`.
 6. Нажмите **Publish release**.
 
 После этого заработают прямые ссылки:
@@ -134,6 +137,7 @@ dist\Chronica-portable.zip
 ```
 https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/ChronicaSetup.exe
 https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-portable.zip
+https://github.com/IvanSemenovVetarion/Chronica/releases/latest/download/Chronica-Android-2.0.1.apk
 ```
 
 > Не загружайте `ChronicaData`, `settings.json`, `backups/` и тестовые сборки.
@@ -156,7 +160,7 @@ IvanSemenovVetarion/Chronica
 - [ ] В репозитории нет `dist/`, `backups/`, `ChronicaData/`;
 - [ ] README и `docs/index.html` открываются без ошибок;
 - [ ] GitHub Pages включён из папки `/docs`;
-- [ ] В релизе `v2.0.0` есть установщик и portable ZIP;
+- [ ] В релизе `v2.0.1` есть установщик и portable ZIP;
 - [ ] Ссылки на скачивание ведут на правильный репозиторий;
 - [ ] В настройках приложения указан правильный `owner/repo`;
 - [ ] Проверено, что установщик запускается на чистой Windows 10/11.

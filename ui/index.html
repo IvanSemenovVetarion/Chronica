@@ -59,6 +59,7 @@
 <link rel="stylesheet" href="onboarding.css">
 <link rel="stylesheet" href="extras.css">
 <link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 
@@ -122,6 +123,9 @@
   </symbol>
   <symbol id="i-x" viewBox="0 0 24 24">
     <path d="M5.5 5.5l13 13M18.5 5.5l-13 13"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24">
+    <path d="M4 7h16M4 12h16M4 17h16"/>
   </symbol>
   <symbol id="i-chevron-down" viewBox="0 0 24 24">
     <path d="M5.5 8.8l6.5 6.5 6.5-6.5"/>
@@ -430,8 +434,13 @@
     </div>
   </aside>
 
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
   <div class="main-wrap">
     <header class="topbar">
+      <button class="icon-btn mobile-nav-toggle" id="mobileNavToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">
+        <svg class="icon"><use href="#i-menu"></use></svg>
+      </button>
       <div class="topbar-crumb">
         <span class="crumb-world" id="crumbWorld">Мой мир</span>
         <span class="crumb-sep" aria-hidden="true">✦</span>
@@ -497,5 +506,6 @@
 <script src="forms.js"></script>
 <script src="dnd.js"></script>
 <script src="onboarding.js"></script>
+<script src="mobile.js"></script>
 </body>
 </html>
