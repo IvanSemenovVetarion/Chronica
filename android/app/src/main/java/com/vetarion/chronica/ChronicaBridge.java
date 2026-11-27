@@ -470,8 +470,13 @@ public class ChronicaBridge {
     private File copyUriToDirectory(Uri uri, File directory, String prefix) throws IOException {
         String original = displayName(uri);
         String extension = extensionOf(original, activity.getContentResolver().getType(uri));
+        if (extension.length() == 0) {
+            if (directory == fontsDir) extension = "ttf";
+            else if (directory == audioDir) extension = "mp3";
+            else extension = "jpg";
+        }
         String name = prefix + "-" + System.currentTimeMillis() + "-" + UUID.randomUUID().toString().substring(0, 8);
-        File target = new File(directory, name + (extension.length() == 0 ? "" : "." + extension));
+        File target = new File(directory, name + "." + extension);
         try (InputStream input = activity.getContentResolver().openInputStream(uri);
              OutputStream output = new FileOutputStream(target)) {
             if (input == null) throw new IOException("Не удалось открыть файл.");
